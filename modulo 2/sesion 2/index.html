@@ -16,17 +16,26 @@
 
         <form id="contactForm">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-z ]+" title="El nombre solo debe contener letras y espacios" required>
 
             <label for="email">Correo Electronico:</label>
             <input type="email" id="email" name="email" required>
 
+            <label for="genero">Genero:</label>
+            <select name="genero" id="genero">
+                <option value="" disabled>Seleccione una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            
             <label for="msj">Mensaje:</label>
             <textarea id="msj" name="msj" required></textarea>
 
             <button type="submit">Enviar</button>
         </form>
-        <p id="reponse"></p>
+        <!-- Mensaje de acción -->
+        <p id="response"></p>
     </div>
 
     <!-- Enlace al archivo de JavaScript -->
