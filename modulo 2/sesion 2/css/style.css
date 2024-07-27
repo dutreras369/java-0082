@@ -29,7 +29,7 @@ label {
     margin: 10px 0 5px;
 }
 
-input, textarea, button {
+input, textarea, select, button {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
