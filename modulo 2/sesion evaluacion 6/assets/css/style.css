@@ -1,0 +1,6 @@
+ul li .nav-link{
+    color: black !important;
+}
+ul li .nav-link:hover{
+    color: gray !important;
+}
