@@ -29,7 +29,10 @@ label {
     margin: 10px 0 5px;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -37,14 +40,14 @@ input, textarea, select, button {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #a728a5;
     color: white;
     cursor: pointer;
     border: none;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #de9cdb;
 }
 
 #response {
