@@ -1,6 +1,8 @@
-const horaDefinida = "21:00";
+// Condiciones 
+
+horaDefinida = "21:05";
 // Obtener la hora actual en formato 'HH:MM'
-const horaActual = new Date().toTimeString().substring(0, 5); // Obtener 'HH:MM'
+horaActual = new Date().toTimeString().substring(0, 5); // Obtener 'HH:MM'
 respuesta = ""
 
 if(horaDefinida == horaActual){
