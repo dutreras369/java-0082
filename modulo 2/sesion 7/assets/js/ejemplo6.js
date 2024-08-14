@@ -1,5 +1,5 @@
 // Hora definida en formato entero (solo horas)
-let horaDefinida = 21;
+let horaDefinida = 22;
 
 // Obtener la hora actual en formato entero (solo horas)
 let ahora = new Date();
@@ -28,5 +28,5 @@ if (resultadoComparacion === 0) {
     respuesta = "Ya es hora de comer!";
 }
 
-// Mostrar la respuesta en el elemento con id 'hora-comida'
-document.getElementById("hora-comida").innerHTML = respuesta;
+// Mostrar la respuesta en el elemento con id termino-clase'
+document.getElementById("termino-clase").innerHTML = respuesta;
