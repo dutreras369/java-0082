@@ -1,18 +1,15 @@
-// Hora definida en formato 'HH:MM'
-let horaDefinida = "21:00";
+// Hora definida en formato entero (solo horas)
+let horaDefinida = 21;
 
-// Obtener la hora actual en formato 'HH:MM'
+// Obtener la hora actual en formato entero (solo horas)
 let ahora = new Date();
-let horaActual = ahora.toTimeString().substring(0, 5); // Obtener 'HH:MM'
+let horaActual = ahora.getHours();
 
 // Función para comparar las horas
 function compararHoras(hora1, hora2) {
-    let [hora1H, hora1M] = hora1.split(':').map(Number);
-    let [hora2H, hora2M] = hora2.split(':').map(Number);
-
-    if (hora1H < hora2H || (hora1H === hora2H && hora1M < hora2M)) {
+    if (hora1 < hora2) {
         return -1; // hora1 es menor que hora2
-    } else if (hora1H > hora2H || (hora1H === hora2H && hora1M > hora2M)) {
+    } else if (hora1 > hora2) {
         return 1; // hora1 es mayor que hora2
     } else {
         return 0; // hora1 es igual a hora2
