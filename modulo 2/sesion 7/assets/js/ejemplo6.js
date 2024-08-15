@@ -1,9 +1,10 @@
 // Hora definida en formato entero (solo horas)
-let horaDefinida = 22;
+let horaDefinida = 21;
+console.log("Hora definida: " + horaDefinida)
 
 // Obtener la hora actual en formato entero (solo horas)
-let ahora = new Date();
-let horaActual = ahora.getHours();
+let horaActual = new Date().getHours();
+console.log("Hora actual: " + horaActual)
 
 // Función para comparar las horas
 function compararHoras(hora1, hora2) {
@@ -19,13 +20,14 @@ function compararHoras(hora1, hora2) {
 // Determinar la respuesta
 let respuesta = "";
 let resultadoComparacion = compararHoras(horaActual, horaDefinida);
+console.log("Resultado de la comparacion: " + resultadoComparacion)
 
 if (resultadoComparacion === 0) {
-    respuesta = "Es la hora de comer!!!";
+    respuesta = "Es la hora de salir!!!";
 } else if (resultadoComparacion === -1) {
-    respuesta = "Aun no es hora de comer :c";
+    respuesta = "Aun no es hora de salir :c";
 } else {
-    respuesta = "Ya es hora de comer!";
+    respuesta = "Estamos en el tiempo extra!";
 }
 
 // Mostrar la respuesta en el elemento con id termino-clase'

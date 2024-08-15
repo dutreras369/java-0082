@@ -6,5 +6,5 @@ z = x + y;
 document.getElementById("demo").innerHTML =
     "El valor de la suma es: " + z;
 
-console.log("x es igual: " + x )
-console.log("y es igual: " + y)
+// console.log("x es igual: " + x )
+// console.log("y es igual: " + y)
