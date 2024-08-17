@@ -1,14 +1,12 @@
 dividendo = parseFloat(prompt('Ingrese dividendo'))
 divisor = parseFloat(prompt('Ingrese divisor'))
 
-function division(x, y){
+function division(dividendo, divisor){
     try{
-        if(y === 0){
+        if(divisor === 0){
             throw new Error('No se puede dividir por cero')
         }
-
-        let resultado = x / y
-        return resultado
+        return dividendo / divisor
     } catch (error) {
         console.error("Ocurrio un error", error.message)
     }     

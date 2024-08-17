@@ -11,7 +11,6 @@ document.getElementById('myForm').addEventListener('submit', async function(even
     };
 
     try {
-        console.log(data)
         const response = await fetch('https://6e0e-34-83-165-19.ngrok-free.app/api', {
             method: 'POST',
             headers: {
@@ -25,6 +24,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
         }
 
         const result = await response.json();
+        console.log(result)
         alertContainer.innerHTML = `
             <div class="alert alert-success" role="alert">
                 Formulario enviado correctamente: ${result.message}
