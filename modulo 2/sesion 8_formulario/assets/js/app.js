@@ -12,7 +12,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
 
     try {
         console.log(data)
-        const response = await fetch('http://10f3-34-83-165-19.ngrok-free.app/api', {
+        const response = await fetch('https://6e0e-34-83-165-19.ngrok-free.app/api', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
